@@ -18,11 +18,11 @@ Sample>help -a
 Sample>ls
     SampleChild
 Sample>cs SampleChild
-SampleChild>help
+Sample/SampleChild>help
     cs  exit   help    ls      cmd1    cmd2
-SampleChild>cmd1
+Sample/SampleChild>cmd1
     No such command "cmd1" registed !
-SampleChild>
+Sample/SampleChild>
 ```
 
 ### 命令注册代码
