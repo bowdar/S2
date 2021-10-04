@@ -26,6 +26,7 @@ public:
     virtual ~Kernel(void);
 
     void run(SystemBuilder::Ptr pSystem);
+    void loop();
     void exit(void);
 };
 

@@ -1,7 +1,8 @@
 //-------------------------------------------------------------------------------
 // SystemBuilder.cpp
 //
-// @author Millhaus.Chen       @time 2014/06/25 14:30
+// @author
+//     Millhaus.Chen       @time 2014/06/25 14:30
 //-------------------------------------------------------------------------------
 #include "../SystemKernelDeclare.h"
 #include "../Model/Content.h"

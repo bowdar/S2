@@ -17,7 +17,7 @@ class RootShell : public S2::Kernel::Shell
 public:
     typedef std::shared_ptr<RootShell> Ptr;
     
-    RootShell(std::string& prompt);
+    RootShell(const std::string& prompt);
     virtual void run();
 
 private:

@@ -39,6 +39,10 @@ void Kernel::run(SystemBuilder::Ptr pSystem)
     }
 }
 
+void Kernel::loop()
+{
+}
+
 void Kernel::exit(void)
 {
 

@@ -7,22 +7,20 @@
 // @author
 //     Millhaus.Chen @time 2016/08/31 10:13
 //-------------------------------------------------------------------------------
-#include "../Kernel/IKernel.h"
+#include "../Kernel/Kernel.h"
 #include "../Kernel/Framework/SystemBuilder.h"
 #include "View/RootShell.h"
 
 #include <memory>
-#include <string>
 
 using namespace S2::Kernel;
 using namespace S2::Console;
 
 int main(int argc, char **argv)
 {
-    IKernel::Ptr pKernel(new IKernel());
+    Kernel::Ptr pKernel(new Kernel());
     
-    std::string s("");
-    RootShell::Ptr pRootShell(new RootShell(s));
+    const RootShell::Ptr pRootShell(new RootShell(""));
 
     SystemBuilder::Ptr pSystem(new ArgBuilder(argc, argv));
     SystemBuilder::Ptr pRunByKernel(new CommonBuilder(std::static_pointer_cast<Module>(pRootShell)));

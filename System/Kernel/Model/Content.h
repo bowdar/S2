@@ -5,7 +5,7 @@
 //     ��¼Kernel���صĸ������͡���̬���Ϳ������
 //
 // @author
-//     Millhaus.Chen @time 2016/08/31 11:28
+//     Millhaus.Chen     @time 2016/08/31 11:28
 //-------------------------------------------------------------------------------
 #pragma once
 
@@ -50,8 +50,8 @@ public:
         }
     }
 
-    const ModuleLibNamesList& getModuleLibNamesList() { return m_moduleLibNames; }
-    const ModuleList& getModuleList() { return m_runByKernelList; }
+    const ModuleLibNamesList& getModuleLibNamesList() const { return m_moduleLibNames; }
+    const ModuleList& getModuleList() const { return m_runByKernelList; }
 
 private:
     ModuleLibNamesList m_moduleLibNames;

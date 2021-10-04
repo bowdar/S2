@@ -14,7 +14,7 @@ using namespace S2::Console;
 using namespace S2::Kernel;
 using namespace std;
 
-RootShell::RootShell(std::string& prompt) : Shell(prompt)
+RootShell::RootShell(const std::string& prompt) : Shell(prompt)
 {
     //m_pCtl->addCommand("quit", bind(&RootShell::quit, this, placeholders::_1),       "              quit system");
     //m_pCtl->addCommand("ls", bind(&RootShell::listShells, this, placeholders::_1),   "              list loaded shells by system");
