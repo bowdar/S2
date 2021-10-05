@@ -28,9 +28,9 @@ int main(int argc, char **argv)
     pSystem->build();
     pRunByKernel->build();
 
-    pKernel->run(pRunByKernel);
+    pKernel->Run(pRunByKernel);
 
-    pKernel->exit();
+    pKernel->Exit();
     pSystem->demolish();
 
     return 0;

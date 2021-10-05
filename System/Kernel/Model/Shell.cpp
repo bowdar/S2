@@ -181,7 +181,7 @@ bool Shell::cdShell(std::string command[])
 //-------------------------------------------------------------------------------
 bool Shell::exitSys(std::string command[])
 {
-//    exit(0);
+//    Exit(0);
     cout << "Exit console ? (y/n) :";
     char c;
     cin >> c;

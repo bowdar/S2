@@ -56,7 +56,7 @@ bool BaseShell::startup(std::string command[])
 	//	{
 	//		pModule->setParam(command[2]);
 	//	}
-	//	pModule->run();
+	//	pModule->Run();
 	//}
 	//catch(std::string e)
 	//{

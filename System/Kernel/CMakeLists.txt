@@ -3,6 +3,7 @@ ADD_DEFINITIONS(-DDLL_EXPORTS)
 add_library(Kernel STATIC SystemKernelDeclare.h
                           Kernel.h
                           Kernel.cpp
+                          Task.hpp
                           util/log.h
                           util/Singleton.h
                           util/SingletonMacro.h

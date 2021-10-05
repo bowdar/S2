@@ -51,7 +51,7 @@ bool RootShell::quit(std::string command[])
 //        try
 //        {
 //            ShellPtr pShell = Factories::GetInstance().createShell(command[2]);
-//            pShell->run();
+//            pShell->Run();
 //        }
 //        catch(...)
 //        {
