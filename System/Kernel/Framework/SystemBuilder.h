@@ -41,9 +41,9 @@ class _DLL_EXPORTS CommonBuilder: public SystemBuilder
 public:
     CommonBuilder(Module::Ptr pModule);
     virtual ~CommonBuilder(void);
-    virtual void write();
-    virtual void build();
-    virtual void demolish();
+    void write() override;
+    void build() override;
+    void demolish() override;
 
 private:
     Module::Ptr m_pModule;
@@ -54,9 +54,9 @@ class _DLL_EXPORTS ArgBuilder: public SystemBuilder
 public:
     ArgBuilder(int argc, char **argv);
     virtual ~ArgBuilder(void);
-    virtual void write();
-    virtual void build();
-    virtual void demolish();
+    void write() override;
+    void build() override;
+    void demolish() override;
 
 private:
     int m_argc;
