@@ -23,7 +23,8 @@ int main(int argc, char **argv)
     const RootShell::Ptr pRootShell(new RootShell(""));
 
     SystemBuilder::Ptr pSystem(new ArgBuilder(argc, argv));
-    SystemBuilder::Ptr pRunByKernel(new CommonBuilder(std::static_pointer_cast<Module>(pRootShell)));
+    SystemBuilder::Ptr pRunByKernel(new CommonBuilder(
+            std::static_pointer_cast<Module>(pRootShell)));
 
     pSystem->build();
     pRunByKernel->build();
@@ -31,6 +32,7 @@ int main(int argc, char **argv)
     pKernel->Run(pRunByKernel);
 
     pKernel->Exit();
+    pRunByKernel->demolish();
     pSystem->demolish();
 
     return 0;

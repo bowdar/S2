@@ -25,10 +25,10 @@ public:
     IFactory(void){}
     virtual ~IFactory(void){}
 
-    /// Overload this function to register shell factory's name
+    /// Overload this function to register factory's name
     virtual const std::string& getTypeName() = 0;
 
-    /// Overload this function to appoint father shell
+    /// Overload this function to appoint father
     virtual const std::string& getFatherName()
     {
         static const std::string fatherName = "";

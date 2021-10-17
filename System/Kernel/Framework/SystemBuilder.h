@@ -1,3 +1,5 @@
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "modernize-use-equals-default"
 //-------------------------------------------------------------------------------
 // SystemBuilder.h
 //
@@ -62,3 +64,5 @@ private:
 };
 
 }}
+
+#pragma clang diagnostic pop
