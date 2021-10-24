@@ -23,14 +23,6 @@ Kernel::Kernel(void)
 
 void Kernel::Run(SystemBuilder::Ptr pSystem)
 {
-    //// @note Millhaus.Chen @time 2016/05/21 13:48
-    ////    Kernel里面跑的co_go单例实例跟模块里面的不同，暂未解决问题
-    //std::thread thr([=]
-    //{
-    //    co_sched.RunLoop();        
-    //});
-    //thr.detach();
-
     m_pKernelLoop = std::make_shared<KernelLoopType>(std::bind(this, &Kernel::Loop));
     m_pKernelLoop->RunForever();
 

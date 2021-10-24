@@ -28,13 +28,6 @@ public:
     /// Overload this function to register factory's name
     virtual const std::string& getTypeName() = 0;
 
-    /// Overload this function to appoint father
-    virtual const std::string& getFatherName()
-    {
-        static const std::string fatherName = "";
-        return fatherName;
-    }
-
     virtual ProductPtr createInstance(const std::string& instanceName = "") = 0;
 
     virtual ProductPtr getInstance(const std::string& instanceName = "") = 0;

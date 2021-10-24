@@ -4,19 +4,20 @@
 // @author
 //     Millhaus.Chen @time 2016/02/23 15:22
 //-------------------------------------------------------------------------------
-//#include "Sample.h"
 #include "SampleShell.h"
 
 #include "../../System/Kernel/Framework/Factories.h"
 #include "../common/TFactory.h"
+
+#include "../../Moduls/Sample/Sample.h"
 
 using namespace std;
 using namespace S2::Kernel;
 
 SampleShell::SampleShell(const std::string& prompt) : BaseShell(prompt)
 {
-    //REGISTER_CMD("cmd1",     "...", Sample::cmd2);
-	//REGISTER_CMD("cmd2",     "...", Sample::cmd2);
+    REGISTER_CMD("cmd1",     "...", Sample::cmd2);
+	REGISTER_CMD("cmd2",     "...", Sample::cmd2);
 }
 
 /// Register factory's name, every factory need implement this funciton
@@ -35,12 +36,12 @@ const std::string& SampleShell::getModuleName()
 
 bool SampleShell::cmd1(std::string command[])
 {
-    //static_pointer_cast<Sample>(m_pCurModule)->cmd1();
+    static_pointer_cast<Sample>(m_pCurModule)->cmd1();
     return true;
 }
 
 bool SampleShell::cmd2(std::string command[])
 {
-    //static_pointer_cast<Sample>(m_pCurModule)->cmd2();
+    static_pointer_cast<Sample>(m_pCurModule)->cmd2();
     return true;
 }

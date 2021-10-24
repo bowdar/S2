@@ -7,7 +7,7 @@
 #pragma once
 
 #include "../util/DllExport.h"
-//#include "../SystemKernelDeclare.h"
+#include "../SystemKernelDeclare.h"
 
 #include <memory>
 #include <string>

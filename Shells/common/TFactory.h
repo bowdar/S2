@@ -20,7 +20,7 @@ class TShellFactory: public S2::Kernel::IFactory<S2::Kernel::Shell>
 {
 public:
     virtual const std::string& getTypeName() override;
-    virtual const std::string& getFatherName() override
+    virtual const std::string& getFatherName()
     {
         static const std::string fatherName = "";
         return fatherName;
