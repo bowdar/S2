@@ -16,7 +16,7 @@ using namespace S2::Kernel;
 
 SampleChildShell::SampleChildShell(const std::string& prompt) : BaseShell(prompt)
 {
-    REGISTER_CMD("cmd1",     "...", SampleChild::cmd2);
+    //REGISTER_CMD("cmd1",     "...", SampleChild::cmd2);
 	REGISTER_CMD("cmd2",     "...", SampleChild::cmd2);
 }
 
